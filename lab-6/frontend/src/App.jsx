@@ -3,6 +3,7 @@ import Homepage from './pages/Homepage'
 import StudentLogin from './pages/StudentLoginPage'
 import TeacherLogin from './pages/TeacherLoginPage'
 import CataloguePage from './pages/CataloguePage'
+import SingleBook from './pages/SingleBook'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/student/login" element={<StudentLogin />} />
           <Route path="/teacher/login" element={<TeacherLogin />} />
           <Route path="/catalogue" element={<CataloguePage />} />
+          <Route path="/book/:id" element={<SingleBook />} />
         </Routes>
       </BrowserRouter>
     </>
